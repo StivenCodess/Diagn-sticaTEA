@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundGradient{
+    width: 100svw;
+    height: 100svh;
+}
+.logoContainer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 20svw;
+    gap: .8rem;
+    padding: 1rem 0 0 2rem;
+}
+.logoImg{
+    width: 6rem;
+    filter: invert(22%) sepia(0%) saturate(267%) hue-rotate(180deg) brightness(97%) contrast(84%) drop-shadow(.2rem .2rem .1rem rgba(0,0,0,.3));
+}
+.logoTitle{
+    font-size: 3rem;
+    color: #434343;
+}
