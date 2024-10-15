@@ -23,7 +23,7 @@
 .navContainer {
   display: flex;
   color: white;
-  background-color: rgba(67, 67, 67, 0.7);
+  background-color: rgba(67, 67, 67, 0.85);
   border-radius: 10px 0px 0px 10px;
 }
 
