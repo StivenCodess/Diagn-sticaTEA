@@ -1,0 +1,47 @@
+.headerContainer {
+  padding-top: 20px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  .logoImg {
+    width: 80px;
+    height: 40px;
+  }
+
+  .logoTitle {
+    font-weight: 300;
+  }
+}
+
+.navContainer {
+  display: flex;
+  color: white;
+  background-color: rgba(67, 67, 67, 0.7);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.ulContainer {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+  padding: 0px 10px 0px 15px;
+  align-items: center;
+
+  li {
+    font-weight: 200;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+
+  li:hover {
+    background-color: rgba(44, 44, 44, 0.7);
+    border-radius: 10px;
+  }
+}
