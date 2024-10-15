@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "nombre": "Javiera Pizarro",
+    "fecha": "hace 1 año",
+    "estrellas": 4,
+    "review": "Muy buena experiencia, las profesionales son un 10, te hacen sentir cómoda y te dan confianza."
+  },
+  {
+    "id": 2,
+    "nombre": "Gorlani Faúndez",
+    "fecha": "hace 1 año",
+    "estrellas": 5,
+    "review": "Aquí hay excelentes profesionales y calidad humana, lo que necesitan nuestros niños con NEE para sentirse tranquilos y apoyados."
+  },
+  {
+    "id": 3,
+    "nombre": "Ahmet Millán",
+    "fecha": "hace 1 año",
+    "estrellas": 5,
+    "review": "Tiene una gran atención, es de primera calidad, 100% recomendado."
+  },
+  {
+    "id": 4,
+    "nombre": "Claudia Araya",
+    "fecha": "hace 1 año",
+    "estrellas": 3,
+    "review": "Este centro sin conocerme, me brindó una ayuda tremenda desinteresada, vocación de Gabriela 100% recomendado."
+  },
+  {
+    "id": 5,
+    "nombre": "Patricio Vilches",
+    "fecha": "hace 2 meses",
+    "estrellas": 4,
+    "review": "Lo recomiendo al 100% son un centro especializado donde atienden ya sea a niños y adultos. "
+  },
+  {
+    "id": 6,
+    "nombre": "Andrea Salinas",
+    "fecha": "hace 1 año",
+    "estrellas": 5,
+    "review": "En mi experiencia con AbrazaLuz es lo mejor que me ha pasado. Súper comprometidas con su trabajo."
+  },
+  {
+    "id": 7,
+    "nombre": "Jesús Heredia Saldivar",
+    "fecha": "hace 1 año",
+    "estrellas": 2,
+    "review": "La calidad de la atención y el compromiso de la misma excelente, le daría más de 5 estrellas, se nota la vocación de servicio :D"
+  },
+  {
+    "id": 8,
+    "nombre": "Jacqueline Cardoza",
+    "fecha": "hace 1 año",
+    "estrellas": 4,
+    "review": "Excelente atención, felicitaciones por contar con tan buen centro para nuestros hijos."
+  },
+  {
+    "id": 9,
+    "nombre": "Lilian Quezada",
+    "fecha": "hace 1 año",
+    "estrellas": 5,
+    "review": "Excelentes profesionales! Y calidad humana :)"
+  },
+  {
+    "id": 10,
+    "nombre": "Ale Quimper",
+    "fecha": "hace 11 meses",
+    "estrellas": 4,
+    "review": "Fuimos muy bien recibidos, contenidos en nuestras aprensiones para con nuestra hijita. "
+  },
+  {
+    "id": 11,
+    "nombre": "Marta Alvarez",
+    "fecha": "hace 1 año",
+    "estrellas": 5,
+    "review": "AbrazaLuz es el mejor centro. Con excelentes profesionales. 100% recomendado."
+  },
+  {
+    "id": 12,
+    "nombre": "Beatriz Gladys González Ramírez",
+    "fecha": "hace 1 año",
+    "estrellas": 4,
+    "review": "Quería agradecer su profesionalismo y su ayuda, 100% recomendable."
+  },
+  {
+    "id": 13,
+    "nombre": "Joaquin Castal",
+    "fecha": "hace 11 meses",
+    "estrellas": 2,
+    "review": "Muy pocos turnos, casi 2 meses de espera. Sin embargo, muy buen servicio."
+  }
+]
