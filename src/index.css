@@ -5,6 +5,7 @@ body {
   font-family: "Saira", sans-serif;
   color: #434343;
   background-image: linear-gradient(90deg, #e0c3fc, #99c4fc);
+  height: 100vh;
 }
 
 *,
@@ -51,4 +52,5 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+  height: 100%;
 }
