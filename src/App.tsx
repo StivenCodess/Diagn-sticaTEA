@@ -1,13 +1,13 @@
 import Nav from "./components/Nav/Nav";
-import Home from "./Sections/Home/Home";
+import AppRouter from "./router/AppRouter";
 
-function App() {
+const App = () => {
   return (
     <>
       <Nav />
-      <Home></Home>
+      <AppRouter />
     </>
   );
-}
+};
 
 export default App;

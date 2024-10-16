@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import styles from "./Nav.module.css";
 import logo from "../../assets/logo.png";
 
@@ -11,10 +13,28 @@ const Nav = () => {
 
       <nav className={styles.navContainer}>
         <ul className={styles.ulContainer}>
-          <li>Inicio</li>
-          <li>Nosotros</li>
-          <li>Profesionales</li>
-          <li>Contacto</li>
+          <li>
+            <NavLink
+              className={({ isActive }) =>
+                `${styles.navLink} ${isActive && styles.active}`
+              }
+              to="/"
+            >
+              Inicio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) =>
+                `${styles.navLink} ${isActive && styles.active}`
+              }
+              to="aboutUs"
+            >
+              Nosotros
+            </NavLink>
+          </li>
+          <li className={styles.navLink}>Profesionales</li>
+          <li className={styles.navLink}>Contacto</li>
         </ul>
       </nav>
     </header>
