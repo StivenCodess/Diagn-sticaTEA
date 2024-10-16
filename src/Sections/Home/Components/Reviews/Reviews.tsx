@@ -1,8 +1,7 @@
 import { useState } from "react";
+
 import styles from "./Reviews.module.css";
-import star from "./assets/star.png";
-import arrow from "./assets/arrow.png";
-import reviewData from "./assets/Reviews.json";
+import { star, arrow, reviewData } from "./assets";
 
 export default function Reviews() {
   const [currentReview, setCurrentReview] = useState(0);
@@ -28,29 +27,33 @@ export default function Reviews() {
   };
 
   const Review = reviewData[currentReview];
-  const { id, name, date, review, stars } = Review;
+  const { id, name, date, review, stars, avatar_url } = Review;
 
   return (
     <div>
       <div className={styles.reviewContainer} key={id}>
         <img
-          className={styles.reviewArrowLeft}
+          className={`${styles.arrow} ${styles.arrowLeft}`}
           src={arrow}
           alt="Previous"
           onClick={handlePrev}
         />
 
         <div className={styles.reviewUpperContainer}>
-          <div className={styles.reviewName}>{name}</div>
-          <div className={styles.reviewDate}>{date}</div>
+          <div className={styles.infoUser}>
+            <img className={styles.avatar} src={avatar_url} alt="" />
+            <span className={styles.reviewName}>{name}</span>
+          </div>
+
+          <span className={styles.reviewDate}>{date}</span>
         </div>
 
-        <div className={styles.reviewComment}>{review}</div>
+        <p className={styles.reviewComment}>{review}</p>
 
         <div className={styles.reviewStars}>{renderStars(stars)}</div>
 
         <img
-          className={styles.reviewArrowRight}
+          className={`${styles.arrow} ${styles.arrowRight} `}
           src={arrow}
           alt="Next"
           onClick={handleNext}

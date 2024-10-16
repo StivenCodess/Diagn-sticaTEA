@@ -46,8 +46,8 @@ export default function Home() {
             </button>
           </div>
         </main>
+        <Reviews />
       </section>
-      <Reviews></Reviews>
     </>
   );
 }

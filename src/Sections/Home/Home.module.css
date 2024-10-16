@@ -2,12 +2,13 @@
   border: 1px solid saddlebrown;
   height: calc(100% - 68px);
   display: flex;
+  align-items: center;
 }
 
 .container {
   max-width: 50%;
   margin-inline: 60px;
-  margin-top: 10%;
+  margin-top: -2%;
 
   .title {
     font-size: 3.3rem;
