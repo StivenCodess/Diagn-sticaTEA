@@ -1,25 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
+.section {
+  border: 1px solid saddlebrown;
+  height: calc(100% - 68px);
+  display: flex;
 }
 
-.backgroundGradient{
-    width: 100svw;
-    height: 100svh;
-}
-.logoContainer{
+.container {
+  max-width: 50%;
+  margin-inline: 60px;
+  margin-top: 10%;
+
+  .title {
+    font-size: 3.3rem;
+    font-weight: 800;
+    padding-bottom: 20px;
+    line-height: 3.5rem;
+    max-width: 85%;
+  }
+
+  .description {
+    font-size: 1.8rem;
+    font-family: "Abel";
+  }
+
+  .reserveContainer {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 20svw;
-    gap: .8rem;
-    padding: 1rem 0 0 2rem;
-}
-.logoImg{
-    width: 6rem;
-    filter: invert(22%) sepia(0%) saturate(267%) hue-rotate(180deg) brightness(97%) contrast(84%) drop-shadow(.2rem .2rem .1rem rgba(0,0,0,.3));
-}
-.logoTitle{
-    font-size: 3rem;
-    color: #434343;
+    flex-direction: column;
+    max-width: 75%;
+
+    .titleReserve {
+      padding-top: 80px;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .buttonReserve {
+      justify-self: center;
+      align-self: center;
+      margin-top: 30px;
+      width: 200px;
+      color: #2c2c2c;
+      padding: 0.8rem 1.8rem;
+      border: none;
+      border-radius: 1rem;
+      background-color: #fff8e1;
+      font-size: 1.5rem;
+      font-family: "Abel";
+      font-weight: 500;
+      box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+    }
+  }
 }
