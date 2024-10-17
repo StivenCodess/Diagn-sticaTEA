@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 
   &::after {
     content: "";
@@ -43,6 +44,7 @@
 .decorativeContainer {
   flex: 1;
   position: absolute;
+  z-index: -1;
   width: 450px;
   height: 600px;
   top: 10%;
@@ -75,6 +77,7 @@
   top: 40%;
   background-size: 130px 130px;
   rotate: -30deg;
+  opacity: 0.9;
 }
 
 .itemThree {
@@ -84,6 +87,7 @@
   top: 48%;
   background-size: 100px 100px;
   rotate: 50deg;
+  opacity: 0.7;
 }
 
 .itemFour {
@@ -93,11 +97,11 @@
   top: 70%;
   background-size: 90px 90px;
   rotate: 180deg;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .main {
-  padding-top: 100px;
+  padding-top: 170px;
   margin-inline: 70px;
 
   .title {
@@ -134,5 +138,142 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .section {
+    &::before {
+      bottom: 8%;
+      left: 15%;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .section {
+    &::before {
+      bottom: 8%;
+      left: 23%;
+    }
+  }
+
+  .main {
+    .paragraphContainer {
+      max-width: 68%;
+      font-size: 1.3rem;
+    }
+  }
+
+  .decorativeContainer {
+    width: 320px;
+    right: 0;
+  }
+
+  .decorativeItem {
+    width: 180px;
+    height: 180px;
+    background-size: 180px 180px;
+  }
+
+  .itemOne {
+    right: 24%;
+  }
+
+  .itemTwo {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    left: 4%;
+  }
+
+  .itemThree {
+    width: 90px;
+    height: 90px;
+    background-size: 90px 90px;
+  }
+
+  .itemFour {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    &::before {
+      bottom: 8%;
+      left: 30%;
+    }
+  }
+
+  .main {
+    .title {
+      font-size: 2.2rem;
+    }
+
+    .paragraphContainer {
+      max-width: 68%;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    &::before {
+      bottom: 3%;
+      rotate: -20deg;
+    }
+
+    &::after {
+      bottom: -3%;
+      left: -8%;
+    }
+  }
+
+  .main {
+    .title {
+      font-size: 2.2rem;
+    }
+
+    .paragraphContainer {
+      max-width: 100%;
+      font-size: 1.2rem;
+    }
+  }
+
+  .decorativeContainer {
+    width: 100%;
+  }
+
+  .decorativeItem {
+    width: 110px;
+    background-size: 110px 110px;
+  }
+
+  .itemOne {
+    right: 7%;
+    top: 2%;
+  }
+
+  .itemTwo {
+    width: 70px;
+    background-size: 70px 70px;
+    left: 4%;
+  }
+
+  .itemThree {
+    width: 50px;
+    top: 53%;
+    background-size: 50px 50px;
+  }
+
+  .itemFour {
+    width: 40px;
+    background-size: 40px 40px;
+    top: 55%;
+    right: 55%;
   }
 }
