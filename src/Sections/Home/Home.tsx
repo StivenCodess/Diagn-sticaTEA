@@ -1,7 +1,8 @@
 import toast, { Toaster } from "react-hot-toast";
 import styles from "./Home.module.css";
 
-import Reviews from "./Components/Reviews/Reviews";
+import Reviews from "./components/Reviews/Reviews";
+import { infinite } from "../../assets";
 
 export default function Home() {
   return (
@@ -46,7 +47,16 @@ export default function Home() {
             </button>
           </div>
         </main>
-        <Reviews />
+
+        <article className={styles.reviewContainer}>
+          <Reviews />
+
+          <img
+            className={styles.logoRaimbow}
+            src={infinite}
+            alt="raimbow infinite logo"
+          />
+        </article>
       </section>
     </>
   );

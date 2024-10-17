@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
-import Home from "../Sections/Home/Home";
-import AboutUs from "../Sections/AboutUs/AboutUs";
+import Home from "../sections/Home/Home";
+import AboutUs from "../sections/AboutUs/AboutUs";
 
 const AppRouter = () => {
   return (

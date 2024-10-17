@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import styles from "./Reviews.module.css";
-import { star, arrow, reviewData } from "./assets";
+import { star, arrow, reviewData } from "../../assets";
 
 export default function Reviews() {
   const [currentReview, setCurrentReview] = useState(0);
@@ -30,15 +30,15 @@ export default function Reviews() {
   const { id, name, date, review, stars, avatar_url } = Review;
 
   return (
-    <div>
-      <div className={styles.reviewContainer} key={id}>
-        <img
-          className={`${styles.arrow} ${styles.arrowLeft}`}
-          src={arrow}
-          alt="Previous"
-          onClick={handlePrev}
-        />
+    <div className={styles.container} key={id}>
+      <img
+        className={`${styles.arrow} ${styles.arrowLeft}`}
+        src={arrow}
+        alt="Previous"
+        onClick={handlePrev}
+      />
 
+      <div className={styles.reviewContainer}>
         <div className={styles.reviewUpperContainer}>
           <div className={styles.infoUser}>
             <img className={styles.avatar} src={avatar_url} alt="" />
@@ -51,14 +51,14 @@ export default function Reviews() {
         <p className={styles.reviewComment}>{review}</p>
 
         <div className={styles.reviewStars}>{renderStars(stars)}</div>
-
-        <img
-          className={`${styles.arrow} ${styles.arrowRight} `}
-          src={arrow}
-          alt="Next"
-          onClick={handleNext}
-        />
       </div>
+
+      <img
+        className={`${styles.arrow} ${styles.arrowRight} `}
+        src={arrow}
+        alt="Next"
+        onClick={handleNext}
+      />
     </div>
   );
 }

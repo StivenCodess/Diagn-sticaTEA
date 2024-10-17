@@ -1,29 +1,16 @@
-.reviewContainer {
-  position: absolute;
-  background-color: #faf9f6;
-  right: 6rem;
-  top: 21rem;
-  width: 37svw;
-  min-height: 30svh;
-  border-radius: 1rem;
-  box-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+.container {
+  display: flex;
+  align-items: center;
   font-family: "Abel";
   color: black;
 
   .arrow {
-    position: absolute;
-    top: 7.5rem;
     width: 3.2rem;
     cursor: pointer;
   }
 
   .arrowLeft {
-    left: -3.5rem;
     transform: scaleX(-1);
-  }
-
-  .arrowRight {
-    right: -3.5rem;
   }
 
   .arrowLeft:active {
@@ -33,57 +20,67 @@
   .arrowRight:active {
     transform: translate(0, 0.1rem);
   }
-}
 
-.reviewUpperContainer {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
+  .reviewContainer {
+    background-color: #faf9f6;
+    border-radius: 1rem;
+    width: 37svw;
+    min-height: 30svh;
 
-  .infoUser {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
 
-    gap: 20px;
-    padding-top: 20px;
-    padding-left: 30px;
+    .reviewUpperContainer {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
 
-    .reviewName {
-      font-size: 1.8rem;
+      .infoUser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 20px;
+        padding-top: 20px;
+        padding-left: 30px;
+
+        .reviewName {
+          font-size: 1.8rem;
+        }
+
+        .avatar {
+          width: 50px;
+        }
+      }
+
+      .reviewDate {
+        padding-top: 20px;
+        padding-right: 30px;
+        font-size: 1.3rem;
+      }
     }
 
-    .avatar {
-      width: 50px;
+    .reviewComment {
+      min-height: 15svh;
+      height: fit-content;
+      padding: 1.8rem 2rem 0 2rem;
+      font-size: 1.5rem;
+      width: 90%;
     }
-  }
 
-  .reviewDate {
-    padding-top: 20px;
-    padding-right: 30px;
-    font-size: 1.3rem;
-  }
-}
+    .reviewStars {
+      display: flex;
+      justify-content: end;
+      padding-right: 30px;
+      padding-top: 20px;
+      padding-bottom: 10px;
 
-.reviewComment {
-  min-height: 15svh;
-  height: fit-content;
-  padding: 1.8rem 2rem 0 2rem;
-  font-size: 1.7rem;
-  width: 90%;
-}
-
-.reviewStars {
-  height: 5svh;
-  position: absolute;
-  display: flex;
-  right: 3rem;
-  bottom: 0;
-  img {
-    aspect-ratio: 1/1;
-    width: 2.3rem;
-    height: 2.3rem;
-    margin: 0 0.5rem 0 0;
+      img {
+        aspect-ratio: 1/1;
+        width: 2.3rem;
+        height: 2.3rem;
+        margin: 0 0.5rem 0 0;
+      }
+    }
   }
 }

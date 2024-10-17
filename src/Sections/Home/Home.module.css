@@ -2,6 +2,39 @@
   height: calc(100% - 68px);
   display: flex;
   align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+
+    width: 300px;
+    height: 300px;
+
+    position: absolute;
+    left: -60px;
+    bottom: -60px;
+
+    opacity: 0.3;
+    rotate: 90deg;
+
+    background-image: url("../../assets/raimbow.png");
+    background-size: 300px 300px;
+  }
+
+  .logoRaimbow {
+    width: 350px;
+    margin-top: 30px;
+    opacity: 0.5;
+  }
+}
+
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10rem;
+  align-items: center;
 }
 
 .container {
