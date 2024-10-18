@@ -1,0 +1,44 @@
+[
+  {
+    "name": "DR. Laura Herrera",
+    "role": "Psiquiatra Infantil y Adolescente",
+    "university_degree": "Médica Psiquiatra",
+    "university": "Universidad Nacional de La Plata",
+    "photo": "./src/sections/Professionals/assets/images/herrera.png"
+  },
+  {
+    "name": "DR. Carolina Muñoz",
+    "role": "Directora del centro",
+    "university_degree": "Psicóloga Clínica",
+    "university": "Universidad de Buenos Aires",
+    "photo": "./src/sections/Professionals/assets/images/muñoz.png"
+  },
+  {
+    "name": "LIC. Felipe Gómez",
+    "role": "Fonoaudiólogo",
+    "university_degree": "Licenciado en Fonoaudiología",
+    "university": "Universidad Nacional de Córdoba",
+    "photo": "./src/sections/Professionals/assets/images/gomez.png"
+  },
+  {
+    "name": "LIC. Andrés Salinas",
+    "role": "Terapeuta Ocupacional",
+    "university_degree": "Licenciado en Terapia Ocupacional",
+    "university": "Universidad Nacional de Rosario",
+    "photo": "./src/sections/Professionals/assets/images/salinas.png"
+  },
+  {
+    "name": "LIC. Manuel Rodríguez",
+    "role": "Neuropsicólogo",
+    "university_degree": "Licenciado en Psicología",
+    "university": "Universidad Nacional de Tucumán",
+    "photo": "./src/sections/Professionals/assets/images/rodriguez.png"
+  },
+  {
+    "name": "LIC. Camila Torres",
+    "role": "Psicopedagoga",
+    "university_degree": "Licenciada en Psicopedagogía",
+    "university": "Universidad del Salvador",
+    "photo": "./src/sections/Professionals/assets/images/torres.png"
+  }
+]

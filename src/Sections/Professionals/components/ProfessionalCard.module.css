@@ -1,0 +1,49 @@
+.cardContainer {
+  width: 370px;
+  background-color: white;
+  border-radius: 15px;
+  list-style: none;
+  padding: 40px;
+  flex: 0 0 370px;
+
+  scroll-snap-align: start;
+
+  .cardPhoto {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .cardName {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 32px;
+    max-width: 70%;
+  }
+
+  .cardInfoContainer {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    padding: 0px;
+    padding-top: 20px;
+
+    li {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      span {
+        font-family: "Abel", sans-serif;
+        font-size: 1.2rem;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
