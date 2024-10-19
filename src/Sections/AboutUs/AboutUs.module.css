@@ -16,8 +16,8 @@
 
     background-image: url("./images/puzzle1.png");
 
-    background-size: 400px 400px, 300px 300px;
-    background-position: -7% 120%, 20% 100%;
+    background-size: 400px 400px;
+    background-position: -7% 120%;
     background-repeat: no-repeat;
   }
 
@@ -28,7 +28,7 @@
 
     position: absolute;
     bottom: 5%;
-    left: 13%;
+    left: 15%;
 
     background-image: url("./images/puzzle1.png");
 
@@ -101,8 +101,9 @@
 }
 
 .main {
-  padding-top: 170px;
-  margin-inline: 70px;
+  width: 70%;
+  padding-top: 5%;
+  margin-inline: 10%;
 
   .title {
     font-family: "Saira", sans-serif;
@@ -113,9 +114,13 @@
 
   .paragraphContainer {
     padding-top: 10px;
-    max-width: 65%;
+    width: 90%;
     font-size: 1.5rem;
     font-family: "Abel", sans-serif;
+
+    .paragraph {
+      line-height: 2;
+    }
   }
 
   .verify {
@@ -145,7 +150,21 @@
   .section {
     &::before {
       bottom: 8%;
-      left: 15%;
+      left: 20%;
+    }
+  }
+
+  .main {
+    padding-top: 10%;
+    width: 60%;
+
+    .title {
+      font-size: 2.2rem;
+    }
+
+    .paragraphContainer {
+      width: 100%;
+      font-size: 1.2rem;
     }
   }
 }
@@ -160,8 +179,11 @@
 
   .main {
     .paragraphContainer {
-      max-width: 68%;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
+      width: 100%;
+      .paragraph {
+        width: 100%;
+      }
     }
   }
 
@@ -204,26 +226,65 @@
   .section {
     &::before {
       bottom: 8%;
-      left: 30%;
+      left: 35%;
     }
   }
 
   .main {
+    width: 68%;
     .title {
       font-size: 2.2rem;
     }
 
     .paragraphContainer {
-      max-width: 68%;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
+  }
+
+  .decorativeContainer {
+    width: 20%;
+    right: 2%;
+  }
+
+  .decorativeItem {
+    width: 50%;
+    height: 50%;
+    background-size: 100%;
+  }
+
+  .itemOne {
+    right: 34%;
+  }
+
+  .itemTwo {
+    width: 30%;
+    height: 30%;
+    background-size: 100%;
+    left: 20%;
+    top: 30%;
+  }
+
+  .itemThree {
+    width: 25%;
+    height: 25%;
+    background-size: 100%;
+    left: 45%;
+    top: 40%;
+  }
+
+  .itemFour {
+    width: 20%;
+    height: 20%;
+    background-size: 100%;
+    top: 45%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .section {
+    height: calc(100% - 60.8px);
     &::before {
-      bottom: 3%;
+      bottom: 10%;
       rotate: -20deg;
     }
 
@@ -234,46 +295,152 @@
   }
 
   .main {
-    .title {
-      font-size: 2.2rem;
+    padding-top: 12%;
+    width: 80%;
+  }
+
+  .decorativeContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section {
+    &::before {
+      bottom: 10%;
+      left: 45%;
+      width: 200px;
+      height: 200px;
+      background-size: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section {
+    &::before {
+      left: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    height: calc(100% - 51.19px);
+    &::after {
+      width: 400px;
+      height: 400px;
+
+      background-size: 100%;
+
+      bottom: -12%;
+      left: -20%;
+      opacity: 0.9;
     }
 
-    .paragraphContainer {
-      max-width: 100%;
-      font-size: 1.2rem;
+    &::before {
+      width: 150px;
+      height: 150px;
+
+      bottom: 20%;
+      left: 50%;
+
+      rotate: -20deg;
+      background-size: 100%;
     }
   }
 
   .decorativeContainer {
-    width: 100%;
+    display: none;
   }
 
-  .decorativeItem {
-    width: 110px;
-    background-size: 110px 110px;
+  .main {
+    .title {
+      font-size: 2rem;
+    }
+
+    .paragraphContainer {
+      .paragraph {
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .section {
+    &::after {
+      width: 380px;
+      height: 380px;
+
+      bottom: -10%;
+    }
+
+    &::before {
+      width: 120px;
+      height: 120px;
+      background-size: 100%;
+      left: 65%;
+      bottom: 25%;
+    }
+  }
+  .main {
+    padding-top: 20%;
+    .title {
+      font-size: 1.7rem;
+    }
+
+    .paragraphContainer {
+      font-size: 0.9rem;
+      text-align: justify;
+      .paragraph {
+        line-height: 2.1;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .section {
+    align-items: center;
+
+    &::after {
+      width: 400px;
+      height: 400px;
+
+      background-size: 100%;
+
+      bottom: -15%;
+      left: -20%;
+      opacity: 0.9;
+    }
+
+    &::before {
+      width: 150px;
+      height: 150px;
+
+      bottom: 20%;
+      left: 60%;
+
+      rotate: -20deg;
+      background-size: 100%;
+    }
   }
 
-  .itemOne {
-    right: 7%;
-    top: 2%;
+  .decorativeContainer {
+    display: none;
   }
 
-  .itemTwo {
-    width: 70px;
-    background-size: 70px 70px;
-    left: 4%;
-  }
+  .main {
+    .title {
+      font-size: 1.2rem;
+    }
 
-  .itemThree {
-    width: 50px;
-    top: 53%;
-    background-size: 50px 50px;
-  }
-
-  .itemFour {
-    width: 40px;
-    background-size: 40px 40px;
-    top: 55%;
-    right: 55%;
+    .paragraphContainer {
+      .paragraph {
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+    }
   }
 }

@@ -8,14 +8,14 @@ const AboutUs = () => {
           <h2 className={styles.title}>Atención a la Neurodiversidad</h2>
           <article className={styles.paragraphContainer}>
             <div className={styles.verify}>
-              <p>
+              <p className={styles.paragraph}>
                 Somos un centro dedicado a la atención y evaluación de la
                 neurodiversidad, con un equipo de profesionales altamente{" "}
                 <span>capacitados.</span>
               </p>
             </div>
             <br />
-            <p>
+            <p className={styles.paragraph}>
               La evaluación del espectro autista es un proceso clínico,
               realizado por neurólogos o psiquiatras mediante varios
               instrumentos. No es una prueba única ni se realiza en un solo día.
