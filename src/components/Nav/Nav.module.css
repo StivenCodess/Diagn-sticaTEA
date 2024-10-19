@@ -51,3 +51,58 @@
     border-radius: 10px;
   }
 }
+
+@media screen and (max-width: 830px) {
+  .logoContainer {
+    gap: 10px;
+
+    .logoImg {
+      width: 60px;
+      height: 30px;
+    }
+
+    .logoTitle {
+      font-size: 1.5rem;
+    }
+  }
+
+  .navContainer {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .logoContainer {
+    .logoImg {
+      width: 60px;
+      height: 30px;
+    }
+
+    .logoTitle {
+      font-size: 1.7rem;
+    }
+  }
+
+  .navContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logoContainer {
+    gap: 10px;
+
+    .logoImg {
+      width: 30px;
+      height: 15px;
+    }
+
+    .logoTitle {
+      font-size: 1.3rem;
+    }
+  }
+
+  .navContainer {
+    display: none;
+  }
+}
