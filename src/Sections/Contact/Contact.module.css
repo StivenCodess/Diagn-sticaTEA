@@ -1,0 +1,107 @@
+.contactContainer {
+  height: calc(100% - 68px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    h3 {
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  .infoContainer {
+    .socialMedia {
+      h3 {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        gap: 20px;
+        padding: 0;
+
+        li {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            margin-top: 15px;
+            background-color: #434343;
+            color: white;
+            padding: 5px;
+            padding-inline: 15px;
+            font-size: 0.8rem;
+            border-radius: 5px;
+            position: relative;
+          }
+
+          span::after {
+            content: "";
+            position: absolute;
+
+            width: 0;
+            height: 0;
+
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 15px solid #434343;
+
+            top: -13px;
+            left: 50%;
+
+            transform: translate(-50%);
+          }
+
+          svg {
+            font-size: 2.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .addressContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      margin-top: 50px;
+      margin-bottom: 10px;
+      font-size: 2.4rem;
+      text-transform: uppercase;
+    }
+
+    .address {
+      padding: 10px;
+      padding-inline: 50px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.555);
+
+      svg {
+        margin-right: 20px;
+      }
+    }
+
+    img {
+      margin-top: 20px;
+      opacity: 0.6;
+      width: 200px;
+    }
+  }
+}

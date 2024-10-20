@@ -43,7 +43,16 @@ const Nav = () => {
               Profesionales
             </NavLink>
           </li>
-          <li className={styles.navLink}>Contacto</li>
+          <li>
+            <NavLink
+              className={({ isActive }) =>
+                `${styles.navLink} ${isActive && styles.active}`
+              }
+              to="contact"
+            >
+              Contacto
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
