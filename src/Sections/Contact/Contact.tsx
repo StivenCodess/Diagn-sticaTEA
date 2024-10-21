@@ -47,7 +47,6 @@ export default function Contact() {
             <FontAwesomeIcon icon={faLocationDot} size="2xl" />
             <span>Balcarce 556, Villa Mercedes</span>
           </div>
-
           <img src={infinite} alt="infinite logo" />
         </div>
       </article>
