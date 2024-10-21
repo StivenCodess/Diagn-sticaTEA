@@ -5,7 +5,7 @@
   justify-content: space-between;
 
   .hamburguer {
-    position: absolute;
+    position: fixed;
     bottom: 25px;
     right: 25px;
 
@@ -141,7 +141,7 @@
   }
 
   .navContainer {
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0px;
     bottom: 0px;
