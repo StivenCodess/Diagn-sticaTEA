@@ -15,15 +15,6 @@ const Nav = () => {
         <img src={logo} alt="Autism Logo" className={styles.logoImg} />
         <h1 className={styles.logoTitle}>DiagnosticaTEA</h1>
       </div>
-      <FontAwesomeIcon
-        icon={faBars}
-        onClick={() => setCloseNav(!closeNav)}
-        className={
-          !closeNav
-            ? `${styles.hamburguer}`
-            : `${styles.hamburguer} ${styles.hamburguerClosed}`
-        }
-      />
 
       <nav
         className={
@@ -84,6 +75,16 @@ const Nav = () => {
           </li>
         </ul>
       </nav>
+
+      <FontAwesomeIcon
+        icon={faBars}
+        onClick={() => setCloseNav(!closeNav)}
+        className={
+          !closeNav
+            ? `${styles.hamburguer}`
+            : `${styles.hamburguer} ${styles.hamburguerClosed}`
+        }
+      />
     </header>
   );
 };

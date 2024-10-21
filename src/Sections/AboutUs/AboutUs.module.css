@@ -326,7 +326,7 @@
 
 @media screen and (max-width: 480px) {
   .section {
-    height: calc(100% - 51.19px);
+    height: calc(100% - 60.8px);
     &::after {
       width: 400px;
       height: 400px;
