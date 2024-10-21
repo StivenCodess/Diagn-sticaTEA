@@ -2,8 +2,13 @@
   height: calc(100% - 68px);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 100px;
+
+  h3 {
+    font-weight: 800;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
   .formContainer {
     display: flex;
@@ -11,7 +16,7 @@
     justify-content: center;
     max-width: 400px;
     h3 {
-      font-size: 2.4rem;
+      font-size: 2.7rem;
       text-transform: uppercase;
       text-align: center;
     }
@@ -37,6 +42,8 @@
         li {
           display: flex;
           flex-direction: column;
+          align-items: center;
+          position: relative;
 
           span {
             margin-top: 15px;
@@ -46,7 +53,13 @@
             padding-inline: 15px;
             font-size: 0.8rem;
             border-radius: 5px;
-            position: relative;
+            position: absolute;
+
+            opacity: 0;
+            top: 50px;
+            transform: translateY(-20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            pointer-events: none;
           }
 
           span::after {
@@ -67,7 +80,13 @@
           }
 
           svg {
+            width: 50px;
             font-size: 2.8rem;
+
+            &:hover + span {
+              opacity: 1;
+              transform: translateY(0);
+            }
           }
         }
       }
@@ -89,9 +108,18 @@
 
     .address {
       padding: 10px;
-      padding-inline: 50px;
+      padding-inline: 30px;
       border-radius: 10px;
       background-color: rgba(255, 255, 255, 0.555);
+
+      -webkit-box-shadow: 0px 4px 10px 0px rgba(66, 68, 90, 0.25);
+      -moz-box-shadow: 0px 4px 10px 0px rgba(66, 68, 90, 0.25);
+      box-shadow: 0px 4px 10px 0px rgba(66, 68, 90, 0.25);
+
+      span {
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
 
       svg {
         margin-right: 20px;
@@ -101,7 +129,7 @@
     img {
       margin-top: 20px;
       opacity: 0.6;
-      width: 200px;
+      width: 150px;
     }
   }
 }

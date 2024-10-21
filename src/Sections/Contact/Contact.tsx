@@ -26,7 +26,7 @@ export default function Contact() {
               <span>Diagnotica_TEA</span>
             </li>
             <li>
-              <FontAwesomeIcon icon={faEnvelope} size="2xl" />
+              <FontAwesomeIcon icon={faEnvelope} size="xl" />
               <span>Diagnoticatea</span>
             </li>
             <li>
