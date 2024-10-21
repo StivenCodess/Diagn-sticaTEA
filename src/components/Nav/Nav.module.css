@@ -2,7 +2,17 @@
   padding-top: 20px;
   padding-left: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+
+  .hamburguer {
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  .hamburguerClosed {
+    display: none;
+  }
 }
 
 .logoContainer {
@@ -24,7 +34,14 @@
   display: flex;
   color: white;
   background-color: rgba(67, 67, 67, 0.85);
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 5px 0px 0px 5px;
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+.closed {
+  opacity: 0;
+  transform: translateX(-100%);
 }
 
 .ulContainer {
@@ -43,12 +60,16 @@
 
   .active {
     background-color: rgba(44, 44, 44, 0.7);
-    border-radius: 10px;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
 
   .navLink:hover {
     background-color: rgba(44, 44, 44, 0.7);
-    border-radius: 10px;
+    border-radius: 5px;
   }
 }
 
@@ -66,8 +87,16 @@
     }
   }
 
+  .hamburguerClosed {
+    display: none;
+  }
+
   .navContainer {
     padding: 10px;
+
+    div {
+      display: none;
+    }
   }
 }
 
@@ -84,7 +113,16 @@
   }
 
   .navContainer {
+    padding: 10px;
+  }
+
+  .closeIcon {
     display: none;
+  }
+
+  .closed {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -103,6 +141,72 @@
   }
 
   .navContainer {
-    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-radius: 0px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(44, 44, 44, 0.95);
+    z-index: 2;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      width: 90%;
+      padding-top: 20px;
+
+      top: 0px;
+
+      span {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 1.4rem;
+        padding-left: 10px;
+      }
+
+      svg {
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+
+    .ulContainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+
+      li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .navLink {
+        font-weight: 300;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+      }
+
+      .active {
+        background-color: rgba(75, 75, 75, 0.8);
+      }
+
+      .navLink:hover {
+        background-color: rgba(75, 75, 75, 0.8);
+      }
+    }
   }
 }
