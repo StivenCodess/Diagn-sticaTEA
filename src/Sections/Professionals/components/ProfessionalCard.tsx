@@ -24,11 +24,13 @@ const ProfessionalCard = ({ employee }: ProfessionalCardProps) => {
 
   return (
     <li className={styles.cardContainer}>
-      <img
-        className={styles.cardPhoto}
-        src={photo}
-        alt={`${name} ${role} ${university_degree}`}
-      />
+       <picture className={styles.cardPhotoContainer}>
+        <img
+          className={styles.cardPhoto}
+          src={photo}
+          alt={`${name} ${role} ${university_degree}`}
+        /> 
+       </picture>
 
       <h4 className={styles.cardName}>{name}</h4>
 

@@ -3,8 +3,8 @@ import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight, faCaretLeft } from "@fortawesome/free-solid-svg-icons";
 
-import ProfessionalCard from "./components/ProfessionalCard";
 import styles from "./Professionals.module.css";
+import ProfessionalCard from "./components/ProfessionalCard";
 import { employesData } from "./assets";
 
 export default function Professionals() {
@@ -22,7 +22,8 @@ export default function Professionals() {
 
   return (
     <section className={styles.sectionContainer}>
-      <h2 className={styles.title}>Nuestros profesionales</h2>
+      <h1 className={styles.title}>Nuestros profesionales</h1>
+      <p>Nuestro equipo está compuesto por especialistas dedicados y altamente capacitados en el tratamiento del autismo. Con una sólida formación y experiencia, brindamos una atención integral y personalizada para cada persona y su familia.</p>
 
       <article className={styles.arrowContainer}>
         <FontAwesomeIcon

@@ -8,17 +8,29 @@
 
   .title {
     font-size: 2.3rem;
+    width: 100%;
     text-transform: uppercase;
   }
+
+  p{
+    font-size: 1.2rem;
+    font-family: "Abel", sans-serif;
+  };
 
   .arrowContainer {
     display: flex;
     align-items: center;
     gap: 20px;
     padding: 20px;
+    width: 100%;
+
+    svg[data-icon="caret-right"],
+    svg[data-icon="caret-left"]{
+      cursor: pointer;
+    }
 
     .carrouselContainer {
-      width: 1210px;
+      width: 100%;
       display: flex;
       gap: 50px;
 
