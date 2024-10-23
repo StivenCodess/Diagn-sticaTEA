@@ -22,8 +22,15 @@ export default function Professionals() {
 
   return (
     <section className={styles.sectionContainer}>
-      <h1 className={styles.title}>Nuestros profesionales</h1>
-      <p>Nuestro equipo está compuesto por especialistas dedicados y altamente capacitados en el tratamiento del autismo. Con una sólida formación y experiencia, brindamos una atención integral y personalizada para cada persona y su familia.</p>
+      <article className={styles.infoContainer}>
+        <h1 className={styles.title}>Nuestros profesionales</h1>
+        <p>
+          Nuestro equipo está compuesto por especialistas dedicados y altamente
+          capacitados en el tratamiento del autismo. Con una sólida formación y
+          experiencia, brindamos una atención integral y personalizada para cada
+          persona y su familia.
+        </p>
+      </article>
 
       <article className={styles.arrowContainer}>
         <FontAwesomeIcon
