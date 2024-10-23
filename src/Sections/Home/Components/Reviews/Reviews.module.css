@@ -84,3 +84,115 @@
     }
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 90%;
+
+    .arrow {
+      width: 2.3rem;
+    }
+
+    .reviewContainer {
+      width: 100%;
+      min-height: 20svh;
+
+      .reviewUpperContainer {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        .infoUser {
+          .reviewName {
+            font-size: 1.3rem;
+          }
+
+          .avatar {
+            width: 40px;
+          }
+        }
+
+        .reviewDate {
+          font-size: 1rem;
+        }
+      }
+
+      .reviewComment {
+        font-size: 1rem;
+        padding: 20px;
+      }
+
+      .reviewStars {
+        padding-top: 0px;
+        margin-top: -20px;
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 90%;
+
+    .arrow {
+      width: 2.3rem;
+    }
+
+    .reviewContainer {
+      width: 100%;
+      min-height: 20svh;
+
+      .reviewUpperContainer {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        .infoUser {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          gap: 20px;
+          padding-top: 20px;
+          padding-left: 30px;
+
+          .reviewName {
+            font-size: 1rem;
+          }
+
+          .avatar {
+            width: 30px;
+          }
+        }
+
+        .reviewDate {
+          padding-top: 20px;
+          padding-right: 30px;
+          font-size: 0.7rem;
+        }
+      }
+
+      .reviewComment {
+        font-size: 0.8rem;
+        padding: 20px;
+      }
+
+      .reviewStars {
+        padding-top: 0px;
+        margin-top: -20px;
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+}

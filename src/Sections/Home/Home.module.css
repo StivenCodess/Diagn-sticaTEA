@@ -59,6 +59,7 @@
     display: flex;
     flex-direction: column;
     max-width: 75%;
+    text-align: center;
 
     .titleReserve {
       padding-top: 80px;
@@ -81,6 +82,110 @@
       font-weight: 500;
       box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.8);
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .section {
+    flex-direction: column;
+    overflow: auto;
+
+    &::after {
+      content: "";
+      width: 250px;
+      height: 250px;
+      position: fixed;
+      background-size: 100%;
+    }
+
+    .logoRaimbow {
+      width: 200px;
+    }
+  }
+
+  .reviewContainer {
+    margin-top: 4rem;
+    width: 100%;
+  }
+
+  .container {
+    min-width: 90%;
+    margin-top: 10%;
+
+    .title {
+      font-size: 2.5rem;
+    }
+
+    .description {
+      font-size: 1.3rem;
+    }
+
+    .reserveContainer {
+      min-width: 100%;
+
+      .titleReserve {
+        padding-top: 50px;
+        font-size: 1.7rem;
+        text-align: center;
+      }
+
+      .buttonReserve {
+        width: 200px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section {
+    flex-direction: column;
+    overflow: auto;
+
+    &::after {
+      content: "";
+      width: 220px;
+      height: 220px;
+      opacity: 0.3;
+      z-index: -1;
+    }
+
+    .logoRaimbow {
+      width: 150px;
+    }
+  }
+
+  .reviewContainer {
+    margin-top: 4rem;
+  }
+
+  .container {
+    margin: 0px;
+    margin-top: 40px;
+
+    .title {
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
+
+    .description {
+      font-size: 1.1rem;
+    }
+
+    .reserveContainer {
+      min-width: 100%;
+
+      .titleReserve {
+        padding-top: 40px;
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      .buttonReserve {
+        width: 170px;
+        font-size: 1rem;
+      }
     }
   }
 }
